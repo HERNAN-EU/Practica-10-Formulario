@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Personal</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="formulario-container">
+        <form action="/" method="post" enctype="multipart/form-data">
+            <h2>Formulario de Inscripción</h2>
+            <section class="seccion personal">
+                <h3>Información Personal</h3>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </section>
+            <section class="seccion escolar">
+                <h3>Información Escolar</h3>
+                <label for="institucion">Institución Educativa:</label>
+                <input type="text" id="institucion" name="institucion" required>
+                <label for="carrera">Carrera:</label>
+                <input type="text" id="carrera" name="carrera" required>
+                <label for="anio_graduacion">Año de Graduación:</label>
+                <input type="number" id="anio_graduacion" name="anio_graduacion" required>
+            </section>
+            <section class="seccion proyectos">
+                <h3>Proyectos Personales</h3>
+                <p>Sube hasta 3 proyectos en formato PDF (máx. 5MB cada uno):</p>
+                <input type="file" id="proyecto1" name="proyecto1" accept="application/pdf" multiple>
+                <input type="file" id="proyecto2" name="proyecto2" accept="application/pdf" multiple>
+                <input type="file" id="proyecto3" name="proyecto3" accept="application/pdf" multiple>
+            </section>
+            <button type="submit">Enviar Formulario</button>
+        </form>
+    </div>
+</body>
+</html>
